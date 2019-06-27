@@ -1,3 +1,71 @@
-body {
-    
+/* Fonts */
+
+@font-face {
+    font-family: MyriadProRegular;
+    src: url("../fonts/MYRIADPRO-REGULAR.OTF");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: MyriadProBold;
+    src: url("../fonts/MYRIADPRO-BOLD.OTF");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: CambriaBold;
+    src: url("../fonts/cambriab.ttf");
+    font-display: swap;
+}
+
+
+.gm-wrapper {
+    font-family: MyriadProRegular;
+}
+
+.gm-wrapper .row {
+    margin: 0;
+    padding: 0;
+}
+
+.section {}
+
+.section.light {}
+
+.section.dark {
+    background-color: #072D56;
+    color: #fff;
+}
+
+.section .section-title.serif {}
+
+.section .section-title {}
+
+
+/* Navigation */
+
+.gm-navigation-wrapper {
+    height: 150px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+}
+
+.gm-navigation-wrapper ul {}
+
+.gm-navigation-wrapper ul li {
+    float: right;
+}
+
+/* Jumbotron */
+
+.gm-jumbotron-wrapper {
+    margin-top: 150px;
+}
+
+.gm-jumbotron-wrapper img {
+    height: auto;
+    width: 100%;
 }
