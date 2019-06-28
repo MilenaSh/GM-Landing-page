@@ -45,7 +45,6 @@
 /* Navigation */
 
 .gm-navigation-wrapper {
-    height: 150px;
     width: 100%;
     position: fixed;
     top: 0;
@@ -62,7 +61,6 @@
 /* Jumbotron */
 
 .gm-jumbotron-wrapper {
-    margin-top: 150px;
 }
 
 .gm-jumbotron-wrapper img {
