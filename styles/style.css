@@ -36,7 +36,8 @@
     /*General styles*/
     
     .gm-wrapper .section .main-section {
-        padding: 3% 2%;
+        padding: 20px 0 0 40px;
+        padding-bottom: 40px;
     }
     
     .gm-wrapper .section.light .main-section {
@@ -82,6 +83,34 @@
     
     .section .section-title {
         margin-bottom: 20px;
+    }
+    /* bullet circles */
+    
+    .circle.outer {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 2px solid;
+        position: absolute;
+        left: -25px;
+        top: 20px;
+    }
+    
+    .circle.inner {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background-color: #298FCE;
+        margin: auto;
+        margin-top: 10px;
+    }
+    
+    .light .circle.outer {
+        background-color: #fff;
+    }
+    
+    .dark .circle.outer {
+        background-color: #072D56;
     }
     /* Navigation */
     
@@ -212,8 +241,59 @@
     }
     /*Services section*/
     
+    .gm-services-wrapper .side-description {
+        text-align: left;
+    }
+    
     .gm-services-wrapper .visualization {
         font-size: 2.1em;
+        text-align: center;
+        line-height: 2.1em;
+        line-height: 1.2em;
+    }
+    
+    .gm-services-wrapper .title {
+        margin-bottom: 50px;
+        margin-top: 10px;
+    }
+    
+    .gm-services-wrapper .visualization .image-holder {
+        width: 200px;
+        height: 200px;
+        background-size: cover;
+        margin: auto;
+    }
+    
+    .gm-services-wrapper .visualization .image-holder.first {
+        background-image: url('../images/Gridmetrics/Icons/Services/Energy_theft_identification.png');
+    }
+    
+    .gm-services-wrapper .visualization .image-holder.first:hover {
+        background-image: url('../images/Gridmetrics/Icons/Services/Energy_theft_identification_hovered.png');
+    }
+    
+    .gm-services-wrapper .visualization .image-holder.second {
+        background-image: url('../images/Gridmetrics/Icons/Services/Price_estimation.png');
+    }
+    
+    .gm-services-wrapper .visualization .image-holder.second:hover {
+        background-image: url('../images/Gridmetrics/Icons/Services/Price_estiomation_hovered.png');
+    }
+    
+    .gm-services-wrapper .visualization .image-holder.third {
+        background-image: url('../images/Gridmetrics/Icons/Services/Demand_forecasting.png');
+    }
+    
+    .gm-services-wrapper .visualization .image-holder.third:hover {
+        background-image: url('../images/Gridmetrics/Icons/Services/Demand_forecasting_hovered.png');
+    }
+    
+    .gm-services-wrapper .visualization .image-holder.fourth {
+        background-image: url('../images/Gridmetrics/Icons/Services/Capacity_forecasting.png');
+    }
+    
+    .gm-services-wrapper .visualization .image-holder.fourth:hover {
+        background-image: url('../images/Gridmetrics/Icons/Services/Capacity_forecasting_hovered.png');
     }
     /*Process section*/
     
@@ -233,6 +313,15 @@
     
     .gm-contact-us-wrapper .section.dark {
         background-color: #072D56;
+    }
+    
+    .gm-contact-us-wrapper .contacts {
+        font-size: 25px;
+    }
+    
+    .gm-contact-us-wrapper .contacts img {
+        width: 20px;
+        height: 20px;
     }
     /* Footer */
     
