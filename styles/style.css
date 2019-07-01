@@ -323,6 +323,24 @@
         width: 20px;
         height: 20px;
     }
+
+    .contact-form {
+        background-color: #2A9ED8;
+        color: white;
+    }
+
+    .contact-form img{
+        width: 10%;
+        height: auto;
+        display: inline-block;
+    }
+
+    .contact-form span{
+        width: 85%;
+        font-size: 3.2em;
+        display: inline-block;
+        padding: 2%;
+    }
     /* Footer */
     
     .gm-footer {
