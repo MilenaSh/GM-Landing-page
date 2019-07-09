@@ -295,6 +295,30 @@
     .gm-services-wrapper .visualization .image-holder.fourth:hover {
         background-image: url('../images/Gridmetrics/Icons/Services/Capacity_forecasting_hovered.png');
     }
+
+
+/*Get to know us*/
+.gm-team-wrapper {
+
+}
+
+.gm-team-wrapper .visualization .col-4 {
+vertical-align: middle;
+}
+
+.gm-team-wrapper .visualization .info-circle{
+    width: 300px;
+
+    height: 300px;
+    
+    border: 2px solid #fff;
+    
+    display: block;
+    
+    border-radius: 50%;
+}
+
+
     /*Process section*/
     
     .gm-process-wrapper.section.light {
