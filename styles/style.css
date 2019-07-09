@@ -295,30 +295,63 @@
     .gm-services-wrapper .visualization .image-holder.fourth:hover {
         background-image: url('../images/Gridmetrics/Icons/Services/Capacity_forecasting_hovered.png');
     }
-
-
-/*Get to know us*/
-.gm-team-wrapper {
-
-}
-
-.gm-team-wrapper .visualization .col-4 {
-vertical-align: middle;
-}
-
-.gm-team-wrapper .visualization .info-circle{
-    width: 300px;
-
-    height: 300px;
+    /*Get to know us*/
     
-    border: 2px solid #fff;
+    .gm-team-wrapper .visualization {
+        margin: 50px 0px;
+    }
     
-    display: block;
+    .gm-team-wrapper .visualization .col-4 {
+        vertical-align: middle;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
     
-    border-radius: 50%;
-}
-
-
+    .gm-team-wrapper .visualization .col-4 .middle {
+        padding: 0;
+        vertical-align: middle;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    
+    .gm-team-wrapper .visualization .circle {
+        width: 30em;
+        height: 30em;
+        border: 2px solid #fff;
+        display: block;
+        border-radius: 50%;
+    }
+    
+    .gm-team-wrapper .visualization .circle.center {
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .gm-team-wrapper .visualization .circle.left {
+        position: absolute;
+        right: -3em;
+    }
+    
+    .gm-team-wrapper .visualization .circle.right {
+        position: absolute;
+        left: -3em;
+    }
+    
+    .gm-team-wrapper .visualization .circle.content {
+        display: none;
+        border-radius: 50%;
+        padding: 5em;
+        background-color: black;
+        opacity: 0.5;
+        z-index: 0;
+    }
+    
+    .gm-team-wrapper .visualization .circle.content:hover {
+        display: inline-block;
+    }
     /*Process section*/
     
     .gm-process-wrapper.section.light {
