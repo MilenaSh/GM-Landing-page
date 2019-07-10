@@ -239,6 +239,49 @@
         width: 90%;
         background-color: #072D56;
     }
+
+/*About us section*/
+
+.gm-about-us-wrapper {
+
+}
+
+.gm-about-us-wrapper .visualization{
+    max-width: 1050px;
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+
+.gm-about-us-wrapper .visualization .pair{
+    text-align: center;
+}
+
+.gm-about-us-wrapper .visualization .pair.top{
+    margin-bottom: 100px;
+}
+
+.gm-about-us-wrapper .visualization .pair.bottom{
+    margin-top: 100px;
+}
+
+.gm-about-us-wrapper .visualization .pair.bottom img{
+    margin-top: 50px;
+}
+
+.gm-about-us-wrapper .visualization .pair span {
+display: block;
+font-size: 2.4em;
+color: #072D56;
+position: absolute;
+width: 305px;
+left: 50%;
+transform: translate(-50%, 0);
+}
+
+.gm-about-us-wrapper .visualization .pair img {
+    height: 15em;
+    }
+
     /*Services section*/
     
     .gm-services-wrapper .side-description {
@@ -246,6 +289,9 @@
     }
     
     .gm-services-wrapper .visualization {
+        margin-top: 70px;
+
+margin-bottom: 70px;
         font-size: 2.1em;
         text-align: center;
         line-height: 2.1em;
@@ -295,6 +341,17 @@
     .gm-services-wrapper .visualization .image-holder.fourth:hover {
         background-image: url('../images/Gridmetrics/Icons/Services/Capacity_forecasting_hovered.png');
     }
+
+/*Why us section*/
+.gm-why-us-wrapper {
+
+}
+
+.gm-why-us-wrapper .visualization img{
+    width: 100%;
+}
+
+
     /*Get to know us*/
     
     .gm-team-wrapper .visualization {
@@ -349,9 +406,10 @@
         z-index: 0;
     }
     
-    .gm-team-wrapper .visualization .circle.content:hover {
+    .gm-team-wrapper .visualization .circle:hover {
         display: inline-block;
     }
+
     /*Process section*/
     
     .gm-process-wrapper.section.light {
