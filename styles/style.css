@@ -21,6 +21,7 @@
     .gm-wrapper {
         /*font-family: MyriadProRegular;*/
         font-size: 10px;
+        line-height: normal;
     }
     /* Clear styles */
     
@@ -254,7 +255,7 @@
     }
     
     .gm-about-us-wrapper .visualization {
-        max-width: 1050px;
+        max-width: 80%;
         padding-bottom: 80px;
         padding-top: 80px;
         margin: auto;
@@ -403,7 +404,8 @@
     
     .gm-why-us-wrapper .visualization .gm-btn.blue {
         color: #fff;
-        background-image: linear-gradient(to right, red, yellow);
+        background-image: linear-gradient(to right, #072D56, #0B5CB5);
+        border: 1px solid #072D56;
         display: inline-block;
         padding: 2px 15px;
     }
@@ -417,6 +419,13 @@
         margin: 50px 0px;
     }
     
+    .gm-team-wrapper .visualization .col-4 {
+        vertical-align: middle;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
     .gm-team-wrapper .visualization .col-4 {
         vertical-align: middle;
         align-items: center;
@@ -458,14 +467,44 @@
     
     .gm-team-wrapper .visualization .circle.content {
         visibility: hidden;
-        border-radius: 50%;
+        position: unset;
         padding: 5em;
-        background-color: black;
-        opacity: 0.5;
-        z-index: 0;
+        padding-top: 2em;
+        z-index: 10;
+        text-align: center;
+        border: none;
+    }
+
+    .gm-team-wrapper .visualization .circle.background {
+        visibility: hidden;
+        padding: 5em;
+        /* background-color: gray; */
+        opacity: 0.7;
+        z-index: 9;
+        height: 100%;
+width: 100%;
+border-radius: 50%;
+position: absolute;
+        border: none;
+    }
+
+
+    .gm-team-wrapper .visualization .circle.content .title {
+color: #72D4F2;
+font-size: 3.2em;
+font-weight: 600;
+margin-bottom: 20px;
+    }
+
+    .gm-team-wrapper .visualization .circle.content .details {
+        display: block;
+color: #fff;
+font-size: 1.6em;
+text-align: initial;
     }
     
-    .gm-team-wrapper .visualization .circle.content:hover {
+    .gm-team-wrapper .info-circle:hover .circle.content,
+    .gm-team-wrapper .info-circle:hover .circle.background {
         visibility: visible;
     }
     /*Process section*/
