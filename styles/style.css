@@ -117,6 +117,12 @@
     .dark .circle.outer {
         background-color: #072D56;
     }
+
+a.contact-link {
+    text-decoration: none;
+    color: unset;
+}
+
     /* Navigation */
     
     .gm-navigation-wrapper {
@@ -648,5 +654,11 @@ text-align: initial;
         }
         .gm-jumbotron-wrapper .call-to-action {
             width: 90%;
+        }
+
+        /* Side section */
+
+        .side-section {
+            display: none;
         }
     }
