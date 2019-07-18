@@ -18,10 +18,10 @@
         font-display: swap;
     }
     
-html {
-    font-size: 10px;
-}
-
+    html {
+        font-size: 10px;
+    }
+    
     .gm-wrapper {
         /*font-family: MyriadProRegular;*/
         /* font-size: 10px; */
@@ -121,12 +121,11 @@ html {
     .dark .circle.outer {
         background-color: #072D56;
     }
-
-a.contact-link {
-    text-decoration: none;
-    color: unset;
-}
-
+    
+    a.contact-link {
+        text-decoration: none;
+        color: unset;
+    }
     /* Navigation */
     
     .gm-navigation-wrapper {
@@ -183,15 +182,15 @@ a.contact-link {
     
     .gm-jumbotron-wrapper .call-to-action {
         width: 70%;
-        top: 250px;
+        top: 25rem;
         color: #fff;
         position: absolute;
         right: 0;
-        height: 30%;
+        height: 30rem;
         opacity: 1;
         z-index: 2;
         font-size: 3.2rem;
-        padding: 50px;
+        padding: 5rem;
     }
     
     .gm-jumbotron-wrapper .call-to-action.background {
@@ -434,7 +433,7 @@ a.contact-link {
         justify-content: center;
         display: flex;
     }
-
+    
     .gm-team-wrapper .visualization .col-4 {
         vertical-align: middle;
         align-items: center;
@@ -483,7 +482,7 @@ a.contact-link {
         text-align: center;
         border: none;
     }
-
+    
     .gm-team-wrapper .visualization .circle.background {
         visibility: hidden;
         padding: 5rem;
@@ -491,25 +490,24 @@ a.contact-link {
         opacity: 0.7;
         z-index: 9;
         height: 100%;
-width: 100%;
-border-radius: 50%;
-position: absolute;
+        width: 100%;
+        border-radius: 50%;
+        position: absolute;
         border: none;
     }
-
-
+    
     .gm-team-wrapper .visualization .circle.content .title {
-color: #72D4F2;
-font-size: 3.2rem;
-font-weight: 600;
-margin-bottom: 20px;
+        color: #72D4F2;
+        font-size: 3.2rem;
+        font-weight: 600;
+        margin-bottom: 20px;
     }
-
+    
     .gm-team-wrapper .visualization .circle.content .details {
         display: block;
-color: #fff;
-font-size: 1.6rem;
-text-align: initial;
+        color: #fff;
+        font-size: 1.6rem;
+        text-align: initial;
     }
     
     .gm-team-wrapper .info-circle:hover .circle.content,
@@ -648,9 +646,8 @@ text-align: initial;
     
     @media (max-width: 991px) {
         html {
-            font-size: 8px;
+            font-size: 7px;
         }
-
         .gm-navigation-wrapper ul .circle-bullet {
             display: none;
         }
@@ -662,9 +659,7 @@ text-align: initial;
         .gm-jumbotron-wrapper .call-to-action {
             width: 90%;
         }
-
         /* Side section */
-
         .side-section {
             display: none;
         }
