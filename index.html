@@ -11,6 +11,7 @@
     <!-- Favicon -->
     <link href="libs/bootstrap-4.3.1-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <script type="text/javascript" src="libs/jquery/jquery.3.4.1.min.js"></script>
     <script type="text/javascript" src="libs/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
@@ -21,7 +22,7 @@
 <body>
     <div class="gm-wrapper">
         <!-- Navigation -->
-        <nav class="gm-navigation-wrapper navbar navbar-expand-lg navbar-light bg-light">
+        <nav id="gmNavigation" class="gm-navigation-wrapper navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#"><img class="gm-logo" src="images/Gridmetrics/logo.svg" /></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -52,7 +53,7 @@
 
 
         <!-- Jumbotron -->
-        <div class="gm-jumbotron-wrapper">
+        <div id="jumbotron" class="gm-jumbotron-wrapper">
             <img src="images/Gridmetrics/First_picture_darken.png" />
             <div class="call-to-action">
                 <div>
@@ -64,9 +65,11 @@
                 </span>
             </div>
             <div class="call-to-action background"></div>
-            <span class="gm-btn-toggle">
-                <span class="circle"></span>
-            </span>
+            <div class="page-scroll text-center">
+                <a href="#jumbotron" class="btn btn-circle">
+                    <i class="fa fa-angle-down fa-2x animated"></i>
+                </a>
+              </div>
         </div>
 
         <!-- Slogan -->
@@ -154,7 +157,7 @@
         </div>
 
         <!-- Why us-->
-        <!--<div id="whyUs" class="gm-why-us-wrapper section light row">
+        <div id="whyUs" class="gm-why-us-wrapper section light row">
             <div class="col col-1 side-section"></div>
             <div class="col col-11 main-section">
                 <div class="circle outer">
@@ -192,7 +195,7 @@
                     </div>
                 </div>
             </div>
-        </div>-->
+        </div>
 
         <!-- Get to know us-->
         <div id="theTeam" class="gm-team-wrapper section dark row">
