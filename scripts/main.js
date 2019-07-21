@@ -39,11 +39,16 @@ $('document').ready(function() {
 })
 
 function loadContent(ev) {
+    let $sideDescription = $('.side-description span');
     let $selected = ev.target;
     let windowWidth = $(window).width();
     console.log($($selected).parent().find('.details'));
 
     if (windowWidth < 768) {
         $($selected).parent().find('.details').toggle();
+        $sideDescription.html('');
+    } else {
+        let details = $($selected).parent().find('.details').html();
+        $sideDescription.html(details);
     }
 }
