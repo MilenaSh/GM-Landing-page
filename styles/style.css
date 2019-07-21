@@ -169,16 +169,16 @@
     
     .gm-navigation-wrapper .gm-btn.contact {
         border: 1px solid #298FCE;
-        padding: 5px 20px;
+        padding: 7px 12px;
+        padding-top: 5px;
+        margin-left: 10px;
         border-radius: 20px;
         font-size: 2.1rem;
         cursor: pointer;
     }
     /* Jumbotron */
     
-    .gm-jumbotron-wrapper {
-        font-size: 10px;
-    }
+    .gm-jumbotron-wrapper {}
     
     .gm-jumbotron-wrapper .call-to-action {
         width: 70%;
@@ -186,7 +186,7 @@
         color: #fff;
         position: absolute;
         right: 0;
-        height: 30rem;
+        height: 29rem;
         opacity: 1;
         z-index: 2;
         font-size: 3.2rem;
@@ -201,7 +201,7 @@
     
     .gm-jumbotron-wrapper img {
         height: auto;
-        min-height: 450px;
+        min-height: 500px;
         width: 100%;
         margin-top: 100px;
     }
@@ -210,113 +210,101 @@
         margin-top: 20px;
         display: inline-block;
     }
-
     /*Arrow button*/
-
-.page-scroll.text-center {
-    position: absolute;
-    margin-top: -10rem;
-    border-radius: 12px;
-    margin-left: 50%;
-}
-
-    .page-scroll .btn-circle i.animated {
-        -webkit-transition-property: -webkit-transform;
-        -webkit-transition-duration: 1s;
-        -moz-transition-property: -moz-transform;
-        -moz-transition-duration: 1s;
-        -webkit-animation-name: pulse;
-        -moz-animation-name: pulse;
-        -webkit-animation-duration: 1.5s;
-        -moz-animation-duration: 1.5s;
-        -webkit-animation-iteration-count: infinite;
-        -moz-animation-iteration-count: infinite;
-        -webkit-animation-timing-function: linear;
-        -moz-animation-timing-function: linear;
-      }
-      
-      .page-scroll .btn-circle:hover i.animated {
-        -webkit-animation-name: pulse;
-        -moz-animation-name: pulse;
-        -webkit-animation-duration: 1.5s;
-        -moz-animation-duration: 1.5s;
-        -webkit-animation-iteration-count: infinite;
-        -moz-animation-iteration-count: infinite;
-        -webkit-animation-timing-function: linear;
-        -moz-animation-timing-function: linear;
-      }
-      
-      @-webkit-keyframes pulse {
-        0% {
-          -webkit-transform: scale(1);
-          transform: scale(1);
-        }
-      
-        50% {
-          -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-        }
-      
-        100% {
-          -webkit-transform: scale(1);
-          transform: scale(1);
-        }
-      }
-      
-      @-moz-keyframes pulse {
-        0% {
-          -moz-transform: scale(1);
-          transform: scale(1);
-        }
-      
-        50% {
-          -moz-transform: scale(1.2);
-          transform: scale(1.2);
-        }
-      
-        100% {
-          -moz-transform: scale(1);
-          transform: scale(1);
-        }
-      }
-      
-      .btn-circle {
-        width: 90px;
-        height: 90px;
-        border-radius: 60px;
-        font-size: 40px;
-        color: rgba(255, 255, 255, 0.6);
-        -webkit-transition: background .4s ease-in-out;
-        -moz-transition: background .4s ease-in-out;
-        transition: background .4s ease-in-out;
-      }
-      
-      .btn-circle:hover, .btn-circle:focus {
-        outline: 0;
-        color: #fff;
-        background: rgba(255, 255, 255, 0.1);
-      }
     
-    /* .gm-jumbotron-wrapper .gm-btn-toggle {
-        width: 25px;
-        height: 40px;
-        padding: 4px;
-        display: inline-block;
-        background: transparent;
-        border: 2px solid #fff;
+    .page-scroll.text-center {
         position: absolute;
-        margin-top: -61px;
+        margin-top: -9rem;
         border-radius: 12px;
         margin-left: 50%;
     }
     
-    .gm-jumbotron-wrapper .gm-btn-toggle .circle {
-        width: 13px;
-        height: 13px;
+    .scroll-hint {
+        padding: 10px 10px 36px 10px;
+    }
+    
+    .mouse-icon {
+        width: 16px;
+        height: 30px;
+        margin-left: 9px;
+        padding-top: 5px;
+        border-radius: 16px;
+        text-align: center;
+        box-shadow: 0px 0px 0px 2px #fff;
+    }
+    
+    .mouse-icon::before {
+        position: absolute;
+        top: 62px;
+        left: 17px;
+        content: "";
+        height: 2px;
+        width: 14px;
         background-color: #fff;
-        border-radius: 50%;
-        display: block;
-    } */
+        transform: rotate(-45deg);
+        transform-origin: 1px 50%;
+        transition: all 0.16s ease-out;
+        -webkit-transition: all 0.16s ease-out;
+        -moz-transition: all 0.16s ease-out;
+        -o-transition: all 0.16s ease-out;
+    }
+    
+    .mouse-icon::after {
+        position: absolute;
+        top: 62px;
+        left: 17px;
+        content: "";
+        height: 2px;
+        width: 14px;
+        background-color: #fff;
+        transform: rotate(-135deg);
+        transform-origin: 1px 50%;
+        background-color: #fff;
+        transition: all 0.16s ease-out;
+        -webkit-transition: all 0.16s ease-out;
+        -moz-transition: all 0.16s ease-out;
+        -o-transition: all 0.16s ease-out;
+    }
+    
+    .mouse-wheel {
+        position: relative;
+        display: inline-block;
+        height: 4px;
+        width: 4px;
+        border-radius: 10px;
+        background-color: #fff;
+        top: -7px;
+        animation: fade-mouse-wheel 1.5s infinite;
+        animation-timing-function: ease;
+        animation-timing-function: ease-in-out;
+    }
+    
+    @keyframes fade-mouse-wheel {
+        0% {
+            transform: translate(0%, 0%);
+            opacity: 0;
+        }
+        20% {
+            transform: translate(0%, 0%);
+            opacity: 1;
+        }
+        25% {
+            transform: translate(0%, 0%);
+            opacity: 1;
+        }
+        75% {
+            transform: translate(0%, 200%);
+            opacity: 1;
+        }
+        95% {
+            transform: translate(0%, 200%);
+            opacity: 0;
+        }
+        100% {
+            transform: translate(0%, 200%);
+            opacity: 0;
+        }
+    }
     /*Slogan section*/
     
     .gm-wrapper .gm-slogan-wrapper.section .main-section {
@@ -331,7 +319,7 @@
     }
     
     .gm-wrapper .section .description.serif {
-        font-size: 3.6rem;
+        font-size: 2.6rem;
     }
     
     .gm-wrapper hr {
@@ -350,8 +338,7 @@
     }
     
     .gm-about-us-wrapper .visualization {
-        max-width: 80%;
-        padding-bottom: 80px;
+        max-width: 90%;
         padding-top: 80px;
         margin: auto;
     }
@@ -369,17 +356,19 @@
     }
     
     .gm-about-us-wrapper .visualization .pair.bottom img {
-        margin-top: 50px;
+        margin-top: 8rem;
     }
     
     .gm-about-us-wrapper .visualization .pair span {
         display: block;
-        font-size: 2.4rem;
+        font-size: 2.3rem;
         color: #072D56;
         position: absolute;
-        width: 360px;
+        width: 30rem;
+        padding: 2rem;
         left: 50%;
         transform: translate(-50%, 0);
+        line-height: 2.3rem;
     }
     
     .gm-about-us-wrapper .visualization .pair img {
@@ -730,6 +719,18 @@
     }
     /*Responsive*/
     
+    @media (max-width: 1200px) {
+        html {
+            font-size: 8px;
+        }
+        .gm-jumbotron-wrapper .call-to-action {
+            width: 80%;
+        }
+        .page-scroll.text-center {
+            margin-top: -12rem;
+        }
+    }
+    
     @media (max-width: 991px) {
         html {
             font-size: 7px;
@@ -745,8 +746,24 @@
         .gm-jumbotron-wrapper .call-to-action {
             width: 90%;
         }
+        .page-scroll.text-center {
+            margin-top: -12rem;
+        }
         /* Side section */
         .side-section {
             display: none;
+        }
+        /*About Grid metrics*/
+        .gm-about-us-wrapper .visualization .pair.bottom {
+            margin-top: 0;
+        }
+    }
+    
+    @media (max-width: 576px) {
+        .gm-about-us-wrapper .visualization .pair.bottom {
+            margin-bottom: 20px;
+        }
+        .gm-about-us-wrapper .visualization .pair.top {
+            margin-bottom: 60px;
         }
     }
