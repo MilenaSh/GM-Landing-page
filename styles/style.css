@@ -161,9 +161,11 @@
     }
     
     .gm-wrapper .gm-btn {
+        display: inline-block;
         border: 1px solid #fff;
-        padding: 5px 20px;
-        border-radius: 23px;
+        padding: 7px 12px;
+        padding-top: 5px;
+        border-radius: 25px;
         cursor: pointer;
     }
     
@@ -535,6 +537,7 @@
     .gm-team-wrapper .visualization .circle.center {
         margin-bottom: 30px;
         display: flex;
+        flex-shrink: 0;
         justify-content: center;
     }
     
@@ -551,8 +554,8 @@
     .gm-team-wrapper .visualization .circle.content {
         visibility: hidden;
         position: unset;
-        padding: 5rem;
-        padding-top: 2rem;
+        padding: 4rem;
+        padding-top: 1rem;
         z-index: 10;
         text-align: center;
         border: none;
@@ -575,24 +578,105 @@
         color: #72D4F2;
         font-size: 3.2rem;
         font-weight: 600;
-        margin-bottom: 20px;
+        margin-bottom: 2rem;
     }
     
     .gm-team-wrapper .visualization .circle.content .details {
         display: block;
         color: #fff;
-        font-size: 1.6rem;
+        font-size: 1.3rem;
         text-align: initial;
+    }
+    
+    .gm-team-wrapper .info-circle {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    .gm-team-wrapper .info-circle.one {
+        background-image: url('../images/Gridmetrics/Icons/Team/Vasil.jpg');
+    }
+    
+    .gm-team-wrapper .info-circle.two {
+        background-image: url('../images/Gridmetrics/Icons/Team/Zdravko.jpg');
+        background-position: top;
+    }
+    
+    .gm-team-wrapper .info-circle.three {
+        background-image: url('../images/Gridmetrics/Icons/Team/Bozhidar.jpg');
+    }
+    
+    .gm-team-wrapper .info-circle.four {
+        background-image: url('../images/Gridmetrics/Icons/Team/Tony.png');
+    }
+    
+    .gm-team-wrapper .info-circle:hover {
+        opacity: 0.8;
     }
     
     .gm-team-wrapper .info-circle:hover .circle.content,
     .gm-team-wrapper .info-circle:hover .circle.background {
         visibility: visible;
     }
+    /*Partners*/
+    
+    .gm-partners-wrapper {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    
+    .gm-partners-wrapper .visualization {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    
+    .gm-partners-wrapper .col-4 {
+        text-align: center;
+    }
+    
+    .gm-partners-wrapper img {
+        height: 100px;
+        width: auto;
+        margin: auto;
+        display: block;
+    }
+    
+    .gm-partners-wrapper .last {
+        height: 150px;
+    }
+    /*Conferences*/
+    
+    .gm-conferences-wrapper {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    
+    .gm-conferences-wrapper .visualization {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    
+    .gm-conferences-wrapper img {
+        height: 100px;
+        width: auto;
+        margin: auto;
+        display: block;
+    }
     /*Process section*/
     
-    .gm-process-wrapper.section.light {
+    .gm-process-wrapper {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    
+    .gm-process-wrapper .visualization {
         padding-bottom: 80px;
+    }
+    
+    .gm-process-wrapper .visualization .step {
+        padding: 0;
+        text-align: center;
     }
     
     .gm-process-wrapper .graph img {
@@ -602,22 +686,18 @@
     .gm-process-wrapper .visualization>div:nth-of-type(1),
     .gm-process-wrapper .visualization>div:nth-of-type(3) {
         text-align: right;
-        font-size: 25px;
+        font-size: 2.2rem;
         padding-right: 2%;
         padding-bottom: 10px;
         padding-top: 10px;
     }
-    /*Process*/
     
-    .gm-process-wrapper {
-        font-size: 10px;
-    }
+    .gm-process-wrapper {}
     
-    .gm-process-wrapper .visualization .col-2,
+    .gm-process-wrapper .visualization .col-3,
     .gm-process-wrapper .visualization .col-4 {
         text-align: center;
         padding: 0;
-        line-height: 1.4rem;
     }
     /*Contact section*/
     
@@ -756,6 +836,22 @@
         /*About Grid metrics*/
         .gm-about-us-wrapper .visualization .pair.bottom {
             margin-top: 0;
+        }
+    }
+    
+    @media (max-width: 700px) {
+        .gm-team-wrapper .visualization .circle.center {
+            margin-bottom: 70px;
+        }
+        .gm-team-wrapper .visualization .circle.center.bottom {
+            margin-bottom: 0;
+            margin-top: 100px;
+        }
+        .gm-team-wrapper .visualization .circle.left {
+            right: -9rem;
+        }
+        .gm-team-wrapper .visualization .circle.right {
+            left: -9rem;
         }
     }
     
