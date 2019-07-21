@@ -41,8 +41,8 @@
     /*General styles*/
     
     .gm-wrapper .section .main-section {
-        padding: 20px 0 0 40px;
-        padding-bottom: 40px;
+        padding: 2rem 0 0 4rem;
+        padding-bottom: 4rem;
     }
     
     .gm-wrapper .section.light .main-section {
@@ -703,24 +703,31 @@
     
     .gm-contact-us-wrapper.section.dark {
         background-color: #072D56;
-        height: 850px;
+        height: 80rem;
+    }
+    
+    .gm-contact-us-wrapper .title {
+        margin-top: 8rem;
+        margin-bottom: 10rem;
     }
     
     .gm-contact-us-wrapper .contacts {
-        font-size: 25px;
+        font-size: 2.5rem;
+        margin-bottom: 4rem;
     }
     
     .gm-contact-us-wrapper .contacts img {
-        width: 20px;
-        height: 20px;
+        width: 5rem;
+        height: 5rem;
+        margin-right: 10px;
     }
     
     .row.contact-form {
-        height: 850px;
+        height: 85rem;
         width: 85%;
         padding: 4% 3%;
         position: absolute;
-        top: -550px;
+        top: -100px;
         background-color: transparent;
         color: white;
         border-radius: 25px;
@@ -728,10 +735,10 @@
     }
     
     .contact-form-background {
-        height: 800px;
+        height: 80rem;
         width: 85%;
         position: absolute;
-        top: -550px;
+        top: -100px;
         background-color: #2A9ED8;
         opacity: 0.8;
         border-radius: 25px;
@@ -742,15 +749,16 @@
     .contact-form textarea {
         line-height: 2rem;
         font-size: 2rem;
-        border-radius: 30px;
+        border-radius: 25px;
         margin-bottom: 50px;
+        padding: 1rem 1.6rem;
         color: #698196;
         border: none;
     }
     
     .contact-form textarea {
-        min-height: 300px;
-        margin-bottom: 30px;
+        min-height: 30rem;
+        margin-bottom: 3rem;
     }
     
     .contact-form button {
@@ -762,6 +770,7 @@
         color: #fff;
         font-weight: 600;
         margin-bottom: 30px;
+        padding: 1rem 1.6rem;
     }
     
     .contact-form img {
@@ -773,12 +782,12 @@
     
     .contact-form span {
         width: 85%;
-        font-size: 3.2rem;
+        font-size: 3rem;
         display: inline-block;
         padding-bottom: 2%;
         margin-left: 15%;
-        line-height: 1.4em;
-        margin-bottom: 50px;
+        line-height: 1.2em;
+        margin-bottom: 4rem;
     }
     /* Footer */
     
@@ -809,6 +818,13 @@
         .page-scroll.text-center {
             margin-top: -12rem;
         }
+        /*Contact form*/
+        .row.contact-form {
+            width: 90%;
+        }
+        .contact-form-background {
+            width: 90%;
+        }
     }
     
     @media (max-width: 991px) {
@@ -836,6 +852,26 @@
         /*About Grid metrics*/
         .gm-about-us-wrapper .visualization .pair.bottom {
             margin-top: 0;
+        }
+    }
+    
+    @media (max-width: 767px) {
+        /*Contact form*/
+        .gm-contact-us-wrapper.section.dark {
+            height: 120rem;
+        }
+        .row.contact-form {
+            top: -260px;
+        }
+        .contact-form-background {
+            top: -260px;
+        }
+        .gm-contact-us-wrapper .title {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+        .gm-contact-us-wrapper .contacts {
+            margin-bottom: 1rem;
         }
     }
     
