@@ -376,10 +376,11 @@
     .gm-about-us-wrapper .visualization .pair img {
         height: 15rem;
     }
-    /*Services section*/
+    /*Solutions section*/
     
     .gm-services-wrapper .side-description {
         text-align: left;
+        margin-bottom: 7rem;
     }
     
     .gm-services-wrapper .visualization {
@@ -398,38 +399,27 @@
         height: 200px;
         background-size: cover;
         margin: auto;
+        border-radius: 50%;
+    }
+    
+    .gm-services-wrapper .visualization .image-holder:hover {
+        background-color: #298fce;
     }
     
     .gm-services-wrapper .visualization .image-holder.first {
-        background-image: url('../images/Gridmetrics/Icons/Services/Energy_theft_identification.png');
-    }
-    
-    .gm-services-wrapper .visualization .image-holder.first:hover {
-        background-image: url('../images/Gridmetrics/Icons/Services/Energy_theft_identification_hovered.png');
+        background-image: url('../images/Gridmetrics/Icons/Services/DSOs.png');
     }
     
     .gm-services-wrapper .visualization .image-holder.second {
-        background-image: url('../images/Gridmetrics/Icons/Services/Price_estimation.png');
-    }
-    
-    .gm-services-wrapper .visualization .image-holder.second:hover {
-        background-image: url('../images/Gridmetrics/Icons/Services/Price_estiomation_hovered.png');
+        background-image: url('../images/Gridmetrics/Icons/Services/energy-trade.png');
     }
     
     .gm-services-wrapper .visualization .image-holder.third {
-        background-image: url('../images/Gridmetrics/Icons/Services/Demand_forecasting.png');
-    }
-    
-    .gm-services-wrapper .visualization .image-holder.third:hover {
-        background-image: url('../images/Gridmetrics/Icons/Services/Demand_forecasting_hovered.png');
+        background-image: url('../images/Gridmetrics/Icons/Services/energy-trade.png');
     }
     
     .gm-services-wrapper .visualization .image-holder.fourth {
-        background-image: url('../images/Gridmetrics/Icons/Services/Capacity_forecasting.png');
-    }
-    
-    .gm-services-wrapper .visualization .image-holder.fourth:hover {
-        background-image: url('../images/Gridmetrics/Icons/Services/Capacity_forecasting_hovered.png');
+        background-image: url('../images/Gridmetrics/Icons/Services/Gas.png');
     }
     /*Why us section*/
     
@@ -661,6 +651,8 @@
         height: 100px;
         width: auto;
         margin: auto;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
         display: block;
     }
     /*Process section*/
