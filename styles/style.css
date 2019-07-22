@@ -330,7 +330,6 @@
         background-color: #072D56;
     }
     /*About us section*/
-    
     /* .gm-about-us-wrapper .circle.outer {
         top: -2px;
     } */
@@ -381,6 +380,7 @@
     .gm-services-wrapper .side-description {
         text-align: left;
         margin-bottom: 7rem;
+        display: block;
     }
     
     .gm-services-wrapper .visualization {
@@ -400,18 +400,24 @@
         background-size: cover;
         margin: auto;
         border-radius: 50%;
+        border: 1px solid #fff;
     }
     
-    .gm-services-wrapper .visualization .image-holder:hover {
+    .gm-services-wrapper .visualization .image-holder:hover,
+    .gm-services-wrapper .visualization .image-holder.selected {
         background-color: #298fce;
     }
     
-    .gm-services-wrapper .visualization .image-holder.first {
+    .gm-services-wrapper .visualization .image-holder img {
+        height: 80%;
+        padding-top: 15%;
+    }
+    /*.gm-services-wrapper .visualization .image-holder.first {
         background-image: url('../images/Gridmetrics/Icons/Services/DSOs.png');
     }
     
     .gm-services-wrapper .visualization .image-holder.second {
-        background-image: url('../images/Gridmetrics/Icons/Services/energy-trade.png');
+        background-image: url('../images/Gridmetrics/Icons/Services/Renewables.png');
     }
     
     .gm-services-wrapper .visualization .image-holder.third {
@@ -420,6 +426,11 @@
     
     .gm-services-wrapper .visualization .image-holder.fourth {
         background-image: url('../images/Gridmetrics/Icons/Services/Gas.png');
+    } */
+    
+    .gm-services-wrapper .visualization .details {
+        margin-bottom: 40px;
+        line-height: normal;
     }
     /*Why us section*/
     
@@ -586,6 +597,7 @@
     
     .gm-team-wrapper .info-circle.one {
         background-image: url('../images/Gridmetrics/Icons/Team/Vasil.jpg');
+        padding-top: 2.5rem;
     }
     
     .gm-team-wrapper .info-circle.two {
@@ -595,14 +607,27 @@
     
     .gm-team-wrapper .info-circle.three {
         background-image: url('../images/Gridmetrics/Icons/Team/Bozhidar.jpg');
+        padding-top: 2.5rem;
     }
     
     .gm-team-wrapper .info-circle.four {
         background-image: url('../images/Gridmetrics/Icons/Team/Tony.png');
+        padding-top: 2.5rem;
     }
     
     .gm-team-wrapper .info-circle:hover {
         opacity: 0.8;
+    }
+    
+    .gm-team-wrapper .info-circle .social {
+        position: absolute;
+        top: 25rem;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    
+    .gm-team-wrapper .info-circle .social img {
+        height: 30px;
     }
     
     .gm-team-wrapper .info-circle:hover .circle.content,
@@ -626,14 +651,15 @@
     }
     
     .gm-partners-wrapper img {
-        height: 100px;
+        height: 150px;
         width: auto;
         margin: auto;
         display: block;
     }
     
-    .gm-partners-wrapper .last {
-        height: 150px;
+    .gm-partners-wrapper .first {
+        height: 80px;
+        margin-top: 40px;
     }
     /*Conferences*/
     
@@ -648,8 +674,8 @@
     }
     
     .gm-conferences-wrapper img {
-        height: 100px;
-        width: auto;
+        height: 9rem;
+        width: 30rem;
         margin: auto;
         margin-top: 5rem;
         margin-bottom: 5rem;
@@ -841,6 +867,9 @@
         .side-section {
             display: none;
         }
+        .gm-wrapper .section .main-section {
+            padding: 5rem 0 0 6rem;
+        }
         /*About Grid metrics*/
         .gm-about-us-wrapper .visualization .pair.bottom {
             margin-top: 0;
@@ -848,6 +877,10 @@
     }
     
     @media (max-width: 767px) {
+        /*Solutions*/
+        .gm-services-wrapper .side-description {
+            display: none;
+        }
         /*Contact form*/
         .gm-contact-us-wrapper.section.dark {
             height: 120rem;
@@ -864,6 +897,9 @@
         }
         .gm-contact-us-wrapper .contacts {
             margin-bottom: 1rem;
+        }
+        .contact-form span {
+            font-size: 2.2rem;
         }
     }
     

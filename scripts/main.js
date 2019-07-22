@@ -35,20 +35,23 @@ $('document').ready(function() {
             }
         });
 
-    $('.image-holder').on('click', loadContent);
+    $('.image-holder img').on('click', loadContent);
 })
 
 function loadContent(ev) {
     let $sideDescription = $('.side-description span');
-    let $selected = ev.target;
+    let $selected = $(ev.target).parent();
     let windowWidth = $(window).width();
-    console.log($($selected).parent().find('.details'));
+    $('.image-holder').removeClass('selected');
 
     if (windowWidth < 768) {
-        $($selected).parent().find('.details').toggle();
+        let selectedClass = $($selected).attr('data-details');
+        $($selected).parent().parent().find('.' + selectedClass).toggle();
         $sideDescription.html('');
     } else {
+        //  console.log($($selected).parent().find('.details').html());
         let details = $($selected).parent().find('.details').html();
         $sideDescription.html(details);
     }
+    $selected.addClass('selected');
 }
