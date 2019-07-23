@@ -1,100 +1,97 @@
     /* Fonts */
-    
+
     @font-face {
         font-family: MyriadProRegular;
         src: url("../fonts/MYRIADPRO-REGULAR.OTF");
         font-display: swap;
     }
-    
+
     @font-face {
         font-family: MyriadProBold;
         src: url("../fonts/MYRIADPRO-BOLD.OTF");
         font-display: swap;
     }
-    
+
     @font-face {
         font-family: CambriaBold;
         src: url("../fonts/cambriab.ttf");
         font-display: swap;
     }
-    
+
     html {
         font-size: 10px;
     }
-    
+
     .gm-wrapper {
-        /*font-family: MyriadProRegular;*/
-        /* font-size: 10px; */
         line-height: normal;
     }
+
     /* Clear styles */
-    
+
     .gm-wrapper .row {
         margin: 0;
         padding: 0;
     }
-    
+
     .gm-wrapper p {
         margin-bottom: unset;
     }
+
     /*********************************************/
     /*General styles*/
-    
+
     .gm-wrapper .section .main-section {
         padding: 2rem 0 0 4rem;
         padding-bottom: 4rem;
     }
-    
+
     .gm-wrapper .section.light .main-section {
         border-left: 1px solid #072D56;
     }
-    
+
     .gm-wrapper .section.dark .main-section {
         border-left: 1px solid #fff;
     }
-    /*.gm-wrapper .main-section .visualization {
-        margin-top: 80px;
-        margin-bottom: 80px;
-    }*/
-    
+
     .gm-wrapper .section .section-title {
         font-size: 3.2rem;
     }
-    
+
     .gm-wrapper .section .description {
         font-size: 2.4rem;
     }
-    
+
     .gm-wrapper .section.light {
         color: #072D56;
     }
-    
+
     .gm-wrapper .section.light .description {
         color: #072D56;
     }
-    
+
     .gm-wrapper .section.dark {
         color: #fff;
     }
-    
+
     .gm-wrapper .section.dark .description {
         color: #fff;
     }
-    
+
     .section.light {}
-    
+
     .section.dark {
         background-color: #072D56;
         color: #fff;
     }
-    
+
     .section .section-title.serif {}
-    
+
     .section .section-title {
         margin-bottom: 20px;
     }
+
     /* bullet circles */
-    
+
     .circle.outer {
         width: 50px;
         height: 50px;
@@ -104,7 +101,7 @@
         left: -25px;
         top: 20px;
     }
-    
+
     .circle.inner {
         width: 25px;
         height: 25px;
@@ -113,21 +110,22 @@
         margin: auto;
         margin-top: 10px;
     }
-    
+
     .light .circle.outer {
         background-color: #fff;
     }
-    
+
     .dark .circle.outer {
         background-color: #072D56;
     }
-    
+
     a.contact-link {
         text-decoration: none;
         color: unset;
     }
+
     /* Navigation */
-    
+
     .gm-navigation-wrapper {
         width: 100%;
         padding: 20px 5%;
@@ -138,12 +136,12 @@
         color: #2F4454;
         border-bottom: 1px solid #072D56;
     }
-    
+
     .gm-navigation-wrapper .gm-logo {
         height: 53px;
         width: auto;
     }
-    
+
     .gm-navigation-wrapper ul .circle-bullet {
         width: 10px;
         height: 10px;
@@ -152,14 +150,14 @@
         display: inline-block;
         margin-right: 10px;
     }
-    
+
     .gm-navigation-wrapper ul.navbar-nav li .nav-link {
         /*float: right;*/
         /*font-family: MyriadProRegular;*/
         color: #072D56;
         font-size: 1.7rem;
     }
-    
+
     .gm-wrapper .gm-btn {
         display: inline-block;
         border: 1px solid #fff;
@@ -168,8 +166,9 @@
         border-radius: 25px;
         cursor: pointer;
     }
-    
+
     .gm-navigation-wrapper .gm-btn.contact {
+        display: inline-block;
         border: 1px solid #298FCE;
         padding: 7px 12px;
         padding-top: 5px;
@@ -178,10 +177,11 @@
         font-size: 2.1rem;
         cursor: pointer;
     }
+
     /* Jumbotron */
-    
+
     .gm-jumbotron-wrapper {}
-    
+
     .gm-jumbotron-wrapper .call-to-action {
         width: 70%;
         top: 25rem;
@@ -194,37 +194,38 @@
         font-size: 3.2rem;
         padding: 5rem;
     }
-    
+
     .gm-jumbotron-wrapper .call-to-action.background {
         background-color: #072D56;
         opacity: 0.6;
         z-index: 1;
     }
-    
+
     .gm-jumbotron-wrapper img {
         height: auto;
         min-height: 500px;
         width: 100%;
         margin-top: 100px;
     }
-    
+
     .gm-jumbotron-wrapper .gm-btn.dark {
         margin-top: 20px;
         display: inline-block;
     }
+
     /*Arrow button*/
-    
+
     .page-scroll.text-center {
         position: absolute;
         margin-top: -9rem;
         border-radius: 12px;
         margin-left: 50%;
     }
-    
+
     .scroll-hint {
         padding: 10px 10px 36px 10px;
     }
-    
+
     .mouse-icon {
         width: 16px;
         height: 30px;
@@ -234,7 +235,7 @@
         text-align: center;
         box-shadow: 0px 0px 0px 2px #fff;
     }
-    
+
     .mouse-icon::before {
         position: absolute;
         top: 62px;
@@ -250,7 +251,7 @@
         -moz-transition: all 0.16s ease-out;
         -o-transition: all 0.16s ease-out;
     }
-    
+
     .mouse-icon::after {
         position: absolute;
         top: 62px;
@@ -267,7 +268,7 @@
         -moz-transition: all 0.16s ease-out;
         -o-transition: all 0.16s ease-out;
     }
-    
+
     .mouse-wheel {
         position: relative;
         display: inline-block;
@@ -280,86 +281,90 @@
         animation-timing-function: ease;
         animation-timing-function: ease-in-out;
     }
-    
+
     @keyframes fade-mouse-wheel {
         0% {
             transform: translate(0%, 0%);
             opacity: 0;
         }
+
         20% {
             transform: translate(0%, 0%);
             opacity: 1;
         }
+
         25% {
             transform: translate(0%, 0%);
             opacity: 1;
         }
+
         75% {
             transform: translate(0%, 200%);
             opacity: 1;
         }
+
         95% {
             transform: translate(0%, 200%);
             opacity: 0;
         }
+
         100% {
             transform: translate(0%, 200%);
             opacity: 0;
         }
     }
+
     /*Slogan section*/
-    
+
     .gm-wrapper .gm-slogan-wrapper.section .main-section {
         border: none;
     }
-    
+
     .gm-wrapper .section .section-title.serif {
         font-size: 4rem;
         font-family: Cambria;
         font-weight: 600;
         margin-bottom: 30px;
     }
-    
+
     .gm-wrapper .section .description.serif {
         font-size: 2.6rem;
     }
-    
+
     .gm-wrapper hr {
         height: 1px;
         width: 90%;
         background-color: #072D56;
     }
+
     /*About us section*/
-    /* .gm-about-us-wrapper .circle.outer {
-        top: -2px;
-    } */
-    
+
     .gm-about-us-wrapper .section .main-section {
         padding-top: 0;
     }
-    
+
     .gm-about-us-wrapper .visualization {
         max-width: 90%;
         padding-top: 80px;
         margin: auto;
     }
-    
+
     .gm-about-us-wrapper .visualization .pair {
         text-align: center;
     }
-    
+
     .gm-about-us-wrapper .visualization .pair.top {
         margin-bottom: 100px;
     }
-    
+
     .gm-about-us-wrapper .visualization .pair.bottom {
         margin-top: 100px;
     }
-    
+
     .gm-about-us-wrapper .visualization .pair.bottom img {
         margin-top: 8rem;
     }
-    
+
     .gm-about-us-wrapper .visualization .pair span {
         display: block;
         font-size: 2.3rem;
@@ -371,29 +376,30 @@
         transform: translate(-50%, 0);
         line-height: 2.3rem;
     }
-    
+
     .gm-about-us-wrapper .visualization .pair img {
         height: 15rem;
     }
+
     /*Solutions section*/
-    
+
     .gm-services-wrapper .side-description {
         text-align: left;
         margin-bottom: 7rem;
         display: block;
     }
-    
+
     .gm-services-wrapper .visualization {
         font-size: 2.1rem;
         text-align: center;
         line-height: 2.1rem;
     }
-    
+
     .gm-services-wrapper .title {
         margin-bottom: 50px;
         margin-top: 10px;
     }
-    
+
     .gm-services-wrapper .visualization .image-holder {
         width: 200px;
         height: 200px;
@@ -402,92 +408,78 @@
         border-radius: 50%;
         border: 1px solid #fff;
     }
-    
+
     .gm-services-wrapper .visualization .image-holder:hover,
     .gm-services-wrapper .visualization .image-holder.selected {
         background-color: #298fce;
     }
-    
+
     .gm-services-wrapper .visualization .image-holder img {
         height: 80%;
         padding-top: 15%;
     }
-    /*.gm-services-wrapper .visualization .image-holder.first {
-        background-image: url('../images/Gridmetrics/Icons/Services/DSOs.png');
-    }
-    
-    .gm-services-wrapper .visualization .image-holder.second {
-        background-image: url('../images/Gridmetrics/Icons/Services/Renewables.png');
-    }
-    
-    .gm-services-wrapper .visualization .image-holder.third {
-        background-image: url('../images/Gridmetrics/Icons/Services/energy-trade.png');
-    }
-    
-    .gm-services-wrapper .visualization .image-holder.fourth {
-        background-image: url('../images/Gridmetrics/Icons/Services/Gas.png');
-    } */
-    
+
     .gm-services-wrapper .visualization .details {
         margin-bottom: 40px;
         line-height: normal;
     }
+
     /*Why us section*/
-    
+
     .gm-why-us-wrapper {}
-    
+
     .gm-why-us-wrapper .visualization {
         padding-top: 80px;
         padding-bottom: 80px;
     }
-    
+
     .gm-why-us-wrapper .visualization span {
         display: block;
         color: #072D56;
         font-size: 2.2rem;
     }
-    
+
     .gm-why-us-wrapper .visualization span.data {
         font-size: 2.4rem;
         width: 60px;
         position: absolute;
     }
-    
+
     .gm-why-us-wrapper .visualization span.data.top {
         left: 0;
         top: 10%;
     }
-    
+
     .gm-why-us-wrapper .visualization span.data.bottom {
         right: 4%;
         top: 75%;
     }
-    
+
     .gm-why-us-wrapper .visualization .right .top {
         position: absolute;
         top: -6%;
         left: -14%;
     }
-    
+
     .gm-why-us-wrapper .visualization .right .bottom {
         position: absolute;
         left: 0;
         top: 68%;
     }
-    
+
     .gm-why-us-wrapper .visualization .left .top {
         position: absolute;
         top: 20%;
         right: -5%;
     }
-    
+
     .gm-why-us-wrapper .visualization .left .bottom {
         position: absolute;
         top: 85%;
         right: 0;
         text-align: center;
     }
-    
+
     .gm-why-us-wrapper .visualization .gm-btn.blue {
         color: #fff;
         background-image: linear-gradient(to right, #072D56, #0B5CB5);
@@ -495,30 +487,31 @@
         display: inline-block;
         padding: 2px 15px;
     }
-    
+
     .gm-why-us-wrapper .visualization img {
         width: 100%;
     }
+
     /*Get to know us*/
-    
+
     .gm-team-wrapper .visualization {
         margin: 50px 0px;
     }
-    
+
     .gm-team-wrapper .visualization .col-4 {
         vertical-align: middle;
         align-items: center;
         justify-content: center;
         display: flex;
     }
-    
+
     .gm-team-wrapper .visualization .col-4 {
         vertical-align: middle;
         align-items: center;
         justify-content: center;
         display: flex;
     }
-    
+
     .gm-team-wrapper .visualization .col-4 .middle {
         padding: 0;
         vertical-align: middle;
@@ -526,7 +519,7 @@
         justify-content: center;
         display: flex;
     }
-    
+
     .gm-team-wrapper .visualization .circle {
         width: 30rem;
         height: 30rem;
@@ -534,24 +527,24 @@
         display: block;
         border-radius: 50%;
     }
-    
+
     .gm-team-wrapper .visualization .circle.center {
         margin-bottom: 30px;
         display: flex;
         flex-shrink: 0;
         justify-content: center;
     }
-    
+
     .gm-team-wrapper .visualization .circle.left {
         position: absolute;
         right: -3rem;
     }
-    
+
     .gm-team-wrapper .visualization .circle.right {
         position: absolute;
         left: -3rem;
     }
-    
+
     .gm-team-wrapper .visualization .circle.content {
         visibility: hidden;
         position: unset;
@@ -561,7 +554,7 @@
         text-align: center;
         border: none;
     }
-    
+
     .gm-team-wrapper .visualization .circle.background {
         visibility: hidden;
         padding: 5rem;
@@ -574,105 +567,128 @@
         position: absolute;
         border: none;
     }
-    
+
     .gm-team-wrapper .visualization .circle.content .title {
         color: #72D4F2;
         font-size: 3.2rem;
         font-weight: 600;
         margin-bottom: 2rem;
     }
-    
+
     .gm-team-wrapper .visualization .circle.content .details {
         display: block;
         color: #fff;
         font-size: 1.3rem;
         text-align: initial;
     }
-    
+
     .gm-team-wrapper .info-circle {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
     }
-    
+
     .gm-team-wrapper .info-circle.one {
         background-image: url('../images/Gridmetrics/Icons/Team/Vasil.jpg');
         padding-top: 2.5rem;
     }
-    
+
     .gm-team-wrapper .info-circle.two {
         background-image: url('../images/Gridmetrics/Icons/Team/Zdravko.jpg');
         background-position: top;
     }
-    
+
     .gm-team-wrapper .info-circle.three {
         background-image: url('../images/Gridmetrics/Icons/Team/Bozhidar.jpg');
         padding-top: 2.5rem;
     }
-    
+
     .gm-team-wrapper .info-circle.four {
         background-image: url('../images/Gridmetrics/Icons/Team/Tony.png');
         padding-top: 2.5rem;
     }
-    
+
     .gm-team-wrapper .info-circle:hover {
         opacity: 0.8;
     }
-    
+
     .gm-team-wrapper .info-circle .social {
         position: absolute;
         top: 25rem;
         left: 50%;
         transform: translate(-50%, 0);
     }
-    
+
     .gm-team-wrapper .info-circle .social img {
         height: 30px;
     }
-    
+
     .gm-team-wrapper .info-circle:hover .circle.content,
     .gm-team-wrapper .info-circle:hover .circle.background {
         visibility: visible;
     }
+
     /*Partners*/
-    
+
     .gm-partners-wrapper {
         padding-top: 70px;
         padding-bottom: 70px;
     }
-    
+
     .gm-partners-wrapper .visualization {
         padding-top: 70px;
         padding-bottom: 70px;
     }
-    
+
+    .gm-partners-wrapper .visualization .cleantech {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .gm-partners-wrapper .visualization .cleantech .description {
+        height: 34px;
+        display: block;
+        font-size: 2rem;
+        font-weight: 600;
+        padding-right: 15px;
+    }
+
+    .gm-partners-wrapper .visualization .ckic img.accelerator {
+        width: 15%;
+        height: auto;
+        position: absolute;
+        left: 61%;
+        transform: translate(-50%, -53px);
+    }
+
     .gm-partners-wrapper .col-4 {
         text-align: center;
     }
-    
+
     .gm-partners-wrapper img {
         height: 150px;
         width: auto;
         margin: auto;
         display: block;
     }
-    
+
     .gm-partners-wrapper .first {
-        height: 80px;
-        margin-top: 40px;
+        height: 70px;
     }
+
     /*Conferences*/
-    
+
     .gm-conferences-wrapper {
         padding-top: 70px;
         padding-bottom: 70px;
     }
-    
+
     .gm-conferences-wrapper .visualization {
         padding-top: 70px;
         padding-bottom: 70px;
     }
-    
+
     .gm-conferences-wrapper img {
         height: 9rem;
         width: 30rem;
@@ -681,26 +697,27 @@
         margin-bottom: 5rem;
         display: block;
     }
+
     /*Process section*/
-    
+
     .gm-process-wrapper {
         padding-top: 70px;
         padding-bottom: 70px;
     }
-    
+
     .gm-process-wrapper .visualization {
         padding-bottom: 80px;
     }
-    
+
     .gm-process-wrapper .visualization .step {
         padding: 0;
         text-align: center;
     }
-    
+
     .gm-process-wrapper .graph img {
         width: 100%;
     }
-    
+
     .gm-process-wrapper .visualization>div:nth-of-type(1),
     .gm-process-wrapper .visualization>div:nth-of-type(3) {
         text-align: right;
@@ -709,37 +726,38 @@
         padding-bottom: 10px;
         padding-top: 10px;
     }
-    
+
     .gm-process-wrapper {}
-    
+
     .gm-process-wrapper .visualization .col-3,
     .gm-process-wrapper .visualization .col-4 {
         text-align: center;
         padding: 0;
     }
+
     /*Contact section*/
-    
+
     .gm-contact-us-wrapper.section.dark {
         background-color: #072D56;
         height: 80rem;
     }
-    
+
     .gm-contact-us-wrapper .title {
         margin-top: 8rem;
         margin-bottom: 10rem;
     }
-    
+
     .gm-contact-us-wrapper .contacts {
         font-size: 2.5rem;
         margin-bottom: 4rem;
     }
-    
+
     .gm-contact-us-wrapper .contacts img {
         width: 5rem;
         height: 5rem;
         margin-right: 10px;
     }
-    
+
     .row.contact-form {
         height: 85rem;
         width: 85%;
@@ -751,7 +769,7 @@
         border-radius: 25px;
         z-index: 1;
     }
-    
+
     .contact-form-background {
         height: 80rem;
         width: 85%;
@@ -762,7 +780,7 @@
         border-radius: 25px;
         z-index: 0;
     }
-    
+
     .contact-form input,
     .contact-form textarea {
         line-height: 2rem;
@@ -773,12 +791,12 @@
         color: #698196;
         border: none;
     }
-    
+
     .contact-form textarea {
         min-height: 30rem;
         margin-bottom: 3rem;
     }
-    
+
     .contact-form button {
         line-height: 2rem;
         font-size: 2rem;
@@ -790,14 +808,14 @@
         margin-bottom: 30px;
         padding: 1rem 1.6rem;
     }
-    
+
     .contact-form img {
         width: 10%;
         height: auto;
         display: inline-block;
         position: absolute;
     }
-    
+
     .contact-form span {
         width: 85%;
         font-size: 3rem;
@@ -807,122 +825,150 @@
         line-height: 1.2em;
         margin-bottom: 4rem;
     }
+
     /* Footer */
-    
+
     .gm-footer {
         font-size: 1.6rem;
         padding: 30px 5%;
         background-color: #061E33;
         color: #fff;
     }
-    
+
     .social-icons-wrapper {
         float: right;
     }
-    
+
     .social-icons-wrapper img {
         height: 30px;
         margin-right: 20px;
     }
+
     /*Responsive*/
-    
+
     @media (max-width: 1200px) {
         html {
             font-size: 8px;
         }
+
         .gm-jumbotron-wrapper .call-to-action {
             width: 80%;
         }
+
         .page-scroll.text-center {
             margin-top: -12rem;
         }
+
         /*Contact form*/
         .row.contact-form {
             width: 90%;
         }
+
         .contact-form-background {
             width: 90%;
         }
     }
-    
+
     @media (max-width: 991px) {
         html {
             font-size: 7px;
         }
+
         .gm-navigation-wrapper ul .circle-bullet {
             display: none;
         }
+
         .gm-navigation-wrapper .gm-btn.contact {
-            font-size: 17px;
-            border: none;
-            padding: 0;
+            display: none;
         }
+
         .gm-jumbotron-wrapper .call-to-action {
             width: 90%;
         }
+
         .page-scroll.text-center {
             margin-top: -12rem;
         }
+
         /* Side section */
         .side-section {
             display: none;
         }
+
         .gm-wrapper .section .main-section {
             padding: 5rem 0 0 6rem;
         }
+
         /*About Grid metrics*/
         .gm-about-us-wrapper .visualization .pair.bottom {
             margin-top: 0;
         }
+
+        /*Partners*/
+
+        .gm-partners-wrapper .visualization .cleantech {
+            justify-content: center;
+        }
     }
-    
+
     @media (max-width: 767px) {
+
         /*Solutions*/
         .gm-services-wrapper .side-description {
             display: none;
         }
+
         /*Contact form*/
         .gm-contact-us-wrapper.section.dark {
             height: 120rem;
         }
+
         .row.contact-form {
             top: -260px;
         }
+
         .contact-form-background {
             top: -260px;
         }
+
         .gm-contact-us-wrapper .title {
             margin-top: 1rem;
             margin-bottom: 1rem;
         }
+
         .gm-contact-us-wrapper .contacts {
             margin-bottom: 1rem;
         }
+
         .contact-form span {
             font-size: 2.2rem;
         }
     }
-    
+
     @media (max-width: 700px) {
         .gm-team-wrapper .visualization .circle.center {
             margin-bottom: 70px;
         }
+
         .gm-team-wrapper .visualization .circle.center.bottom {
             margin-bottom: 0;
             margin-top: 100px;
         }
+
         .gm-team-wrapper .visualization .circle.left {
             right: -9rem;
         }
+
         .gm-team-wrapper .visualization .circle.right {
             left: -9rem;
         }
     }
-    
+
     @media (max-width: 576px) {
         .gm-about-us-wrapper .visualization .pair.bottom {
             margin-bottom: 20px;
         }
+
         .gm-about-us-wrapper .visualization .pair.top {
             margin-bottom: 60px;
         }
