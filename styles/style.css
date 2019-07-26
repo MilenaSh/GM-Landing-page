@@ -316,6 +316,11 @@
 
     /*Slogan section*/
 
+    .gm-wrapper .gm-slogan-wrapper{
+        padding-top: 15rem;
+        padding-bottom: 15rem;
+    }
+
     .gm-wrapper .gm-slogan-wrapper.section .main-section {
         border: none;
     }
