@@ -16,7 +16,7 @@ $('document').ready(function() {
  
                     event.preventDefault();
                     $('html, body').animate({
-                        scrollTop: target.offset().top - 120
+                        scrollTop: target.offset().top - 100
                     }, 1000, function() {
        
                         var $target = $(target);
@@ -39,7 +39,7 @@ function loadContent(ev) {
     
     let $selected = $(this);
     let descriptionClass = $selected.attr('data-details');
-    let $sideDescription = $('.side-description span');
+    let $sideDescription = $('.side-description');
     let $description = $('.' + descriptionClass);
     let description = $description.html();
 
