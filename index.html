@@ -259,6 +259,95 @@
             </div>
         </div>
 
+        <!-- Case Studies-->
+        <div id="services" class="gm-services-wrapper section dark row">
+            <div class="col col-1 side-section"></div>
+            <div class="col col-11 main-section">
+                <div class="circle outer">
+                    <div class="circle inner"></div>
+                </div>
+                <div class="section-title">Case Studies</div>
+                <div class="visualization">
+                    <div class="row">
+                        <div class="col-xl-2 col-md-2 col-sm-2 col-xs-12">
+                            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                              <a class="nav-link tabs active" id="v-pills-theft-tab" data-toggle="pill" href="#v-pills-theft" role="tab" aria-controls="v-pills-theft" aria-selected="true">CATCHING ENERGY THIEVES</a>
+                              <a class="nav-link tabs" id="v-pills-forecasting-tab" data-toggle="pill" href="#v-pills-forecasting" role="tab" aria-controls="v-pills-forecasting" aria-selected="false">FORECASTING ENERGY DEMAND</a>
+                              <a class="nav-link tabs" id="v-pills-solar-tab" data-toggle="pill" href="#v-pills-solar" role="tab" aria-controls="v-pills-solar" aria-selected="false">PREDICTING SOLAR OUTPUT</a>
+                              <a class="nav-link tabs" id="v-pills-gas-tab" data-toggle="pill" href="#v-pills-gas" role="tab" aria-controls="v-pills-gas" aria-selected="false">EDUCING NATURAL GAS TRANSMISSION COSTS</a>
+                            </div>
+                          </div>
+                          <div class="col-xl-10 col-md-10 col-sm-10 col-xs-10">
+                            <div class="tab-content" id="v-pills-tabContent">
+                              <div class="tab-pane fade show active" id="v-pills-theft" role="tabpanel" aria-labelledby="v-pills-theft-tab">
+                                  <img  src="images/Gridmetrics/Icons/Casestudies/thieves.jpeg"/>
+                                <p>The Case:</p>
+                                <p>It is estimated that energy theft amounts to 4% of the total energy used in the world annually. This theft costs the world economy 
+                                over $64 billion a year and is responsible for over 1% of the total emissions of CO2 (more than the country of Italy releases in 1 year).</p>
+                                <p>The Challenge:</p>
+                            <p>Energy theft losses are caused by non-paying customers. A large portion of the energy is being stolen in rural areas and in the slums surrounding 
+                                major cities in the developing world where installing smart meters is more difficult due to poor infrastructure.</p>
+                                
+                                Reaching these areas is also difficult and some energy companies choose to take a loss than to waste more resources trying to conduct expensive investigations that have a success rate of less than 10%.
+                                The Solution:
+                                We’ve developed an algorithm for the detection of energy theft using regular non-smart meter technology. The algorithm is an improvement of an existing solution that was deployed in Brazil to solve the very same problem of catching thieves in areas where taking accurate meter readings is more difficult.
+                                Our solution was developed in close collaboration with one of the biggest DSOs in Bulgaria. The algorithm first looks at the historical energy consumption data and tries to find customers with an anomalous usage pattern. Then the algorithm uses a wide range of external data (such as weather data) to determine if the customer is a thief or not. Then an alert is given to an inspector to go and examine the set consumer. Upon inspection, a report is generated which is then used by the system to improve its predictions.
+                                </div>
+                              <div class="tab-pane fade" id="v-pills-forecasting" role="tabpanel" aria-labelledby="v-pills-forecasting-tab">
+                                    <img  src="images/Gridmetrics/Icons/Casestudies/forecasting.jpeg"/>  
+                                The Case:
+                                On May 8th, 2019 India’s power demand soared to a record high around four months before consumption is usually the highest in a year. Although the energy produced that day was 177.7 GW (12% higher than a year ago) it still did not manage to meet the increased demand of 178.25GW. This spike was attributed to the unusually hot weather.
+                                
+                                Such drastic spikes in energy demand can cause energy shortages (which need to be addressed by importing more expensive energy from abroad) and even blackouts. This can have a negative impact on the entire economy.
+                                The Challenge:
+                                Predicting energy demand is no easy task either. The demand for energy is influenced by a wide range of factors such as the weather, socio-economic factors such as the growth in GDP, holidays and many more.
+                                
+                                Traditional statistical models often times fail to accurately predict the energy demand due to this large amount of variables.
+                                Techniques such as ARIMA and other methods for time series analysis also often times fail due to the highly seasonal nature of energy demand and the presents of short, mid and long term trends.
+                                The Solution:
+                                To help energy traders better prepare for such events we’ve developed an algorithm for energy demand forecasting based on state of the art neural networks. The algorithm was built with historical demand and weather data provided by an energy trading company. The algorithm uses neural networks to combine data from multiple sources such as the aforementioned weather data and produces an hourly prediction for the next 24 hours.
+                                The Outcome:
+                                The algorithm was tested with a select group of customers of the energy trader and managed to reduce the error of their predictions from 23.19% to 18.16%. This reduction in the forecasting error was predicted to save the energy trader and its clients 150,000 euros per year.
+                                </div>
+                              <div class="tab-pane fade" id="v-pills-solar" role="tabpanel" aria-labelledby="v-pills-solar-tab">
+                                    <img  src="images/Gridmetrics/Icons/Casestudies/solar.jpeg"/>  
+                                The Case:
+                                According to a recent analysis by Bloomberg 50% of the world’s energy will come from solar and wind by 2050. The output of these energy sources is mostly dependent on weather conditions.
+                                
+                                This means that solar panels and wind turbines cannot be turned on or off on demand and any reduction in their output needs to be compensated by other assets such as gas power plants. Short term fluctuations in solar output can thus cause outages and destabilize the power grid.
+                                The Challenge:
+                                The world's weather system is one of the most complex systems known to man. Minor changes in the composition of the atmosphere, direction of currents or even the conditions on the surface of the Sun can have an impact on the weather here on Earth. This makes short term weather forecasting extremely difficult.
+                                
+                                To make matters worse, climate change makes our old weather models completely obsolete.
+                                The Solution:
+                                To increase the reliability of solar panels and to reduce the aforementioned risk we’ve developed a novel algorithm to predict PV panel output. The algorithm uses a novel neural network architecture that takes in both history production data as well as weather data to make accurate predictions of the output for the next 24 hours.
+                                The Outcome:
+                                We've developed this algorithm using data from Ampiron and TenneT from the last 4 years of their operations in Germany. The error rate that our model managed to achieve on this dataset is 3.22%. The error rate of a local DSO’s forecasts was reported at 5%.
+                                </div>
+                              <div class="tab-pane fade" id="v-pills-gas" role="tabpanel" aria-labelledby="v-pills-gas-tab">
+                                    <img  src="images/Gridmetrics/Icons/Casestudies/gas.jpeg"/>
+                                  The Case:
+                                When you use natural gas in Europe you not only pay for the gas itself but you also pay a transition fee to the company that owns the pipes through which the gas reaches you. These fees can severely increase your bill depending on when you decide to pay them.
+                                
+                                Paying these fees a year in advance is the cheapest option but that means you have to know exactly how much gas you’ll need for the next 365 days.
+                                The Challenge:
+                                Accurately predicting your demand for gas one year into the future is not an easy task. Gas demand is largely affected by the temperature outside. When it’s cold, people use more gas to heat their homes when it’s warm power plants use more gas to produce electricity to power ACs.
+                                
+                                Certain activities such as road repairs can also increase the demand for gas in the short term as gas is used to melt the asphalt. All of these seemingly random events make year ahead forecasting very difficult.
+                                The Solution:
+                                To minimize the cost of gas caused by inaccurate forecasts we’ve developed a two part algorithm. The first part of the algorithm makes a prediction for how much gas will be needed for next year based on historical consumption and weather data.
+                                
+                                The second part of the algorithm then takes this forecast and builds up a strategy on how much yearly, quarterly, monthly and daily transit to buy. Since gas demand fluctuates on a daily basis the 2nd part of the algorithm tries to balance its purchases in real time adapting to any sudden changes in temperature or unexpected events.
+                                The Outcome:
+                                To test this algorithm we used 3 years worth of data borrowed from a local gas distributor. The first part of our algorithm managed to predict the gas needs of a methane station operated by the distributor with an error rate of less than 12%.
+                                </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Why us-->
         <!-- <div id="whyUs" class="gm-why-us-wrapper section light row">
             <div class="col col-1 side-section"></div>

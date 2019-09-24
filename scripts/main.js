@@ -2,6 +2,7 @@ $('document').ready(function() {
     $('a[href*="#"]')
         .not('[href="#"]')
         .not('[href="#0"]')
+        .not('.tabs')
         .click(function(event) {
             // 
             if (
